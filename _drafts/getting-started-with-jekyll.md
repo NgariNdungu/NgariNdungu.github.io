@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting started with Jekyll"
+title: "Getting Started With Jekyll"
 ---
 # Getting Started With Jekyll
 I love the simplicity of text documents and every once in a while, I feel the need to put up a rant somewhere. Unfortunately, by the time I get online to get blogging, my rant is somewhat diluted. 
