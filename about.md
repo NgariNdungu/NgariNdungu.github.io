@@ -2,6 +2,7 @@
 layout: page
 title: "About Me"
 permalink: /about/
+weight: 10
 ---
 
 This is where am supposed to write something about myself. I am supposed to say how **awesome** I am and the **wonderful** things I do. I am supposed to give you an insight into who *this* Ngari is. But I won't... or maybe `I just did!`.
