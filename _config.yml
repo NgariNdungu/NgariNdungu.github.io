@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Life is full of questions. Questions without answers or to which each
   one of us has their own answer. I ask questions alot!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://ngarindungu.me.ke" # the base hostname & protocol for your site
 twitter_username: pngarim
 github_username:  ngarindungu
 #repository: NgariNdungu/NgariNdungu.github.io

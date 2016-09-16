@@ -21,7 +21,7 @@
         {% for my_page in sites %}
           {% if my_page.title %}
           <!-- changed from full_base_url -->
-          <a class="page-link" href="{{ my_page.url | prepend: custom_url }}">{{ my_page.title | escape }}</a>
+          <a class="page-link" href="{{ my_page.url | prepend: full_base_url }}">{{ my_page.title | escape }}</a>
           {% endif %}
         {% endfor %}
       </div>
