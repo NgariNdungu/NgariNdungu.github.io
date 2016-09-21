@@ -9,7 +9,7 @@ var map = L.map('map', {
 //var map = L.map('map').setView([-1.293031, 36.866733], 8);
 
 // icon attribution
-var iconAttribution = "Placeholder icon made by <a href='http://www.flaticon.com/authors/madebyoliver> Madebyoliver </a> from www.flaticon.com";
+var iconAttribution = "Placeholder icon made by <a href='http://www.flaticon.com/authors/madebyoliver'> Madebyoliver </a> from www.flaticon.com";
 document.getElementById('iconttribution').innerHTML = iconAttribution;
 // base map options
 var tileOptions = {
@@ -23,7 +23,7 @@ var osmBase = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', t
 // GeoJson
 // icon to use for visited places
 var visitedIcon = L.icon({
-    iconUrl: '../placeholder.png',
+    iconUrl: 'placeholder.png',
     iconSize: [35, 45] 
     });
    
@@ -43,7 +43,7 @@ var geojsonOptions = {
     // filter:
 };
 
-var points = new L.GeoJSON.AJAX('../villages.geojson', geojsonOptions);
+var points = new L.GeoJSON.AJAX('villages.geojson', geojsonOptions);
 points.addTo(map);
 
 // count layers on map

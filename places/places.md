@@ -14,10 +14,10 @@ Map Goes Here
 {::options parse_block_html="true" /}
 {::comment} add map icon attributions {:/comment}
 
-<p id='iconttribution' style="float:right; font-size:50%;"></p>
+<p id='iconttribution' style="float:right; font-size:60%;"></p>
 
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
-<script src='../leaflet.ajax.min.js' type='text/javascript'> </script>
-<script src='../places.js' type='text/javascript'></script>
+<script src='leaflet.ajax.min.js' type='text/javascript'> </script>
+<script src='places.js' type='text/javascript'></script>
