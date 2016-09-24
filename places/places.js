@@ -11,6 +11,10 @@ var map = L.map('map', {
 // icon attribution
 var iconAttribution = "Placeholder icon made by <a href='http://www.flaticon.com/authors/madebyoliver'> Madebyoliver </a> from www.flaticon.com";
 document.getElementById('iconttribution').innerHTML = iconAttribution;
+
+// county polygon as geojson
+var county_url = "http://ngarindungu.pythonanywhere.com/search/county/"
+
 // base map options
 var tileOptions = {
     minZoom: 6,
@@ -26,6 +30,24 @@ var visitedIcon = L.icon({
     iconUrl: 'placeholder.png',
     iconSize: [35, 45] 
     });
+
+// function to fetch county bounds
+var onClick = function(e) {
+    console.log(e.target.feature.properties); // to access feature properties
+    // ajax
+    var xhttp = new XMLHttpRequest(); // create object     
+    xhttp.open("POST", county_url, true);
+    //xhttp.timeout = 300;
+    var formData = new FormData();    
+    formData.append("name", e.target.feature.properties.name);    
+    xhttp.send(formData);
+    xhttp.onreadystatechange = function() {
+        if(this.readyState == 4 & this.status == 200) {
+            console.log(typeof(this.responseText));
+            var county = L.geoJson(JSON.parse(this.responseText)).addTo(map);
+        }        
+    }
+}
    
 var geojsonOptions = {
     /*pointToLayer: function(feature, latlng) {        
@@ -39,15 +61,26 @@ var geojsonOptions = {
         if(feature.properties.visited === '1') {            
             layer.setIcon(visitedIcon);                        
         }
+        // bind events to each point
+        layer.on('mouseover', function(e) {layer.openPopup();});
+        layer.on('mouseout', function(e) {layer.closePopup();});
+        // override onclick event
+        layer.on('click', onClick);
     }
     // filter:
 };
 
-var points = new L.GeoJSON.AJAX('villages.geojson', geojsonOptions);
+var points =  L.geoJson.ajax('villages.geojson', geojsonOptions);
 points.addTo(map);
+console.log(points.getBounds());
+/* TODO 
+show county name on hover: openpopup
+draw county on click:
+make ajax call to django view with the county name
+create new geojson layer with response and add to map
 
 // count layers on map
-/*
+
 var count = 0
 map.eachLayer(function(layer) {
     count += 1;
