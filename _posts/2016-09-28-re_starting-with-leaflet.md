@@ -1,6 +1,7 @@
 ---
 layout: post
 title: (Re)Starting with Leaflet
+comments: true
 ---
 
 Getting a map onto a web page can be a daunting task. Demand that the map *does stuff* and hair-loss starts to be a concern. I know, this is about my fourth crack at it. This time though, I'm determined to come out *tops*.
