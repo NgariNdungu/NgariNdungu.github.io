@@ -29,7 +29,7 @@ title: "Places or whatever"
 
 The title is required for jekyll to build your page. Once you `bundle exec jekyll serve`, a link with the title of your page is added to your navigation pane... in the *wrong* place. Wrong according to me. Every other site has programmed me to expect the *about* page to be the last item in the navigation bar. So, how to [change the ordering] of jekyll pages?
 
-### The map
+### [The map]
 The [leaflet tutorials] page provides a quick introduction and gets a map on your page pretty easily. Tutorials are awesome of course, since you don't even need to know javascript to get started. This however, doesn't stay true for long. While I have added web maps in the past, these were simple, with basic functionality I didn't understand. To really be able to dig into the [API docs] an understanding of javascript is imperative. Otherwise, when things break(and they will), they might break you!
 
 #### What does my map do?
@@ -68,5 +68,5 @@ This is an interesting challenge and I will update as I go.
 [OpenStreetMap]: http://www.openstreetmap.org/
 [`leaflet-ajax`]: https://github.com/calvinmetcalf/leaflet-ajax
 [pythonanywhere]: http://ngarindungu.pythonanywhere.com/ 
-
+[The map]: /places/
 
