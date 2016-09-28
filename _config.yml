@@ -33,5 +33,5 @@ timezone: Africa/Nairobi
 comments:
   provider: disqus
 disqus:
-  short_name: ngarindungu
+  shortname: ngarindungu
 
