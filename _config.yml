@@ -20,11 +20,10 @@ description: > # this means to ignore newlines until "baseurl:"
   Life is full of questions. Questions without answers or to which each
   one of us has their own answer. I ask questions alot!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ngarindungu.me.ke" # the base hostname & protocol for your site
+url: "http://ngarindungu.github.io" # the base hostname & protocol for your site
 author: Ndinga
 twitter_username: pngarim
 github_username:  ngarindungu
-#repository: NgariNdungu/NgariNdungu.github.io
 # Build settings
 markdown: kramdown
 theme: minima
