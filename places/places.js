@@ -34,17 +34,19 @@ var visitedIcon = L.icon({
 // function to fetch county bounds
 var onClick = function(e) {
     console.log(e.target.feature.properties); // to access feature properties
+    
     // ajax
     var xhttp = new XMLHttpRequest(); // create object     
     xhttp.open("POST", county_url, true);
-    //xhttp.timeout = 300;
     var formData = new FormData();    
     formData.append("name", e.target.feature.properties.name);    
     xhttp.send(formData);
     xhttp.onreadystatechange = function() {
         if(this.readyState == 4 & this.status == 200) {
-            console.log(typeof(this.responseText));
-            var county = L.geoJson(JSON.parse(this.responseText)).addTo(map);
+            // clear countyPolygons before drawing new polygon
+            countyPolygons.clearLayers();
+            // response received as string. convert to json
+            countyPolygons.addData(JSON.parse(this.responseText));
         }        
     }
 }
@@ -72,7 +74,7 @@ var geojsonOptions = {
 
 var points =  L.geoJson.ajax('villages.geojson', geojsonOptions);
 points.addTo(map);
-console.log(points.getBounds());
+var countyPolygons = L.geoJson().addTo(map);
 /* TODO 
 show county name on hover: openpopup
 draw county on click:
