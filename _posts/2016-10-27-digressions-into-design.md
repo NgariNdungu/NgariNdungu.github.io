@@ -15,21 +15,21 @@ It is in the pursuit of this beauty that I decided to try my hand at 'drawing'.
 
 <div class="row">
 {% for image in group1 %}
-<div class="col-4">
+<div class="icol-4">
 ![{{image}}](/images/{{image}})
 </div>
 {% endfor %}
 </div>
 <div class="row">
 {% for image in group2 %}
-<div class="col-4">
+<div class="icol-4">
 ![{{image}}](/images/{{image}})
 </div>
 {% endfor %}
 </div>
 <div class="row">
 {% for image in group3 %}
-<div class="col-4">
+<div class="icol-4">
 ![{{image}}](/images/{{image}})
 </div>
 {% endfor %}
