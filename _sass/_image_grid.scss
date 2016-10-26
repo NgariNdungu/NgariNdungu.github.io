@@ -1,26 +1,27 @@
-* {
+[class*="icol-"]{
     box-sizing: border-box;
+    float: left;
+    padding: $spacing-unit/2; 
 }
 
-[class*="icol-"] {
-    width: 100%;
-    float: left;
-    padding: $spacing-unit/2;
-}
+.icol-1 {width: 8.33%;}
+.icol-2 {width: 16.66%;}
+.icol-3 {width: 25%;}
+.icol-4 {width: 33.33%;}
+.icol-5 {width: 41.66%;}
+.icol-6 {width: 50%;}
+.icol-7 {width: 58.33%;}
+.icol-8 {width: 66.66%;}
+.icol-9 {width: 75%;}
+.icol-10 {width: 83.33%;}
+.icol-11 {width: 91.66%;}
+.icol-12 {width: 100%;}
+
 
 @include media-query($on-palm) {
-    .icol-1 {width: 8.33%;}
-    .icol-2 {width: 16.66%;}
-    .icol-3 {width: 25%;}
-    .icol-4 {width: 33.33%;}
-    .icol-5 {width: 41.66%;}
-    .icol-6 {width: 50%;}
-    .icol-7 {width: 58.33%;}
-    .icol-8 {width: 66.66%;}
-    .icol-9 {width: 75%;}
-    .icol-10 {width: 83.33%;}
-    .icol-11 {width: 91.66%;}
-    .icol-12 {width: 100%;}
+    [class*="icol-"] {
+        width: 100%;
+    }
 }
 
 .row::after {
