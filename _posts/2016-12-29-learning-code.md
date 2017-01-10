@@ -38,6 +38,7 @@ We got introduced to programming in `C`. With a theory and practical class. Each
 We ran through `python` sometime in the fourth year, but the less said about that the better.
 
 ### Failures
+
 #### Ichi
 The first project I tried to implement was done with a classmate as part of the 'science contest'. Note the 'tried'.
 The idea was simple, to build a system to ease the process of taking out an insurance cover, and applying for claims.

@@ -4,5 +4,5 @@ _site
 *.patch
 _drafts
 *~
-
+_localconfig*
 
