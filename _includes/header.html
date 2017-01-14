@@ -3,7 +3,11 @@
   <div class="wrapper">
 
     {% assign custom_url = site.url | append: site.baseurl %}
+    {% if jekyll.environment == 'production'%}
     {% assign full_base_url = site.github.url | default: custom_url %}
+    {% else %}
+    {% assign full_base_url = custom_url %}
+    {% endif %}
     {% assign sites = site.pages | sort:"weight" %}
     <a class="site-title" href="{{ full_base_url }}/">{{ site.title | escape }}</a>
 
@@ -17,7 +21,7 @@
       </a>
 
       <div class="trigger">
-        
+
         {% for my_page in sites %}
           {% if my_page.title %}
           <!-- changed from full_base_url -->

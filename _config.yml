@@ -29,8 +29,5 @@ markdown: kramdown
 theme: minima
 timezone: Africa/Nairobi
 #comments
-comments:
-  provider: disqus
 disqus:
   shortname: ngarindungu
-
