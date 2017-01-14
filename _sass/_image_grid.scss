@@ -1,7 +1,7 @@
 [class*="icol-"]{
     box-sizing: border-box;
     float: left;
-    padding: $spacing-unit/2; 
+    padding: $spacing-unit/2;
 }
 
 .icol-1 {width: 8.33%;}
@@ -34,4 +34,8 @@
     content: "";
     clear: both;
     display: block;
+}
+
+.right {
+  float: right;
 }
