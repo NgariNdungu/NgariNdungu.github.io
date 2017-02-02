@@ -5,14 +5,15 @@ permalink: /places/
 weight: 2
 ---
 
-When complete, I expect this page to house a map of the small villages I have visited. This being a **static** site, this looks like a good problem to have.
+When complete, I expect this page to house a map of the small villages I have visited.
+In addition these *places* should be augmented by at least a story and a photo or two.  
+Considering that am using a **static** site generator, this looks like a good problem to have.
 
 ### To Start With...
 <div id='map' style="width:100%; height:600px; border:1px solid black;">
 Map Goes Here
 </div>
 {::options parse_block_html="true" /}
-{::comment} add map icon attributions {:/comment}
 
 <p id='iconttribution' style="float:right; font-size:60%;"></p>
 
