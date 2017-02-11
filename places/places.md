@@ -15,7 +15,7 @@ Map Goes Here
 </div>
 {::options parse_block_html="true" /}
 
-<p id='iconttribution' style="float:right; font-size:60%;"></p>
+<!-- <p id='iconttribution' style="float:right; font-size:60%;"></p> -->
 
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" />

@@ -11,8 +11,8 @@ var map = L.map('map').fitBounds(kenyaExtents);
 map.setZoom(7);
 
 // icon attribution
-var iconAttribution = "Placeholder icon made by <a href='http://www.flaticon.com/authors/madebyoliver'> Madebyoliver </a> from www.flaticon.com";
-document.getElementById('iconttribution').innerHTML = iconAttribution;
+// var iconAttribution = "Placeholder icon made by <a href='http://www.flaticon.com/authors/madebyoliver'> Madebyoliver </a> from www.flaticon.com";
+// document.getElementById('iconttribution').innerHTML = iconAttribution;
 
 // county polygon as geojson
 var county_url = "http://ngarindungu.pythonanywhere.com/search/county/"
@@ -30,7 +30,7 @@ var osmBase = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', t
 // icon to use for visited places
 var visitedIcon = L.icon({
     iconUrl: 'placeholder.png',
-    iconSize: [35, 45]
+    iconSize: [30, 30]
     });
 
 // function to fetch county bounds
