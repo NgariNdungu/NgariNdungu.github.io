@@ -61,4 +61,6 @@ But I couldn't. Hell, I was not even able to figure out where to begin! So, a fe
 Seemed like a good decision at the time, but, catastrophe! After that, I just did not feel like writing anymore.
 
 ### Learning to Learn
-I make too much noise when I write. I'll follow this up with a **part II**.
+I make too much noise when I write. I'll follow this up with a [part II].
+
+[part II]: {{site.url}}/2017/02/11/learning-code-p2.html

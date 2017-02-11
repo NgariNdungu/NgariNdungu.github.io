@@ -1,7 +1,6 @@
 _site
 .sass-cache
 .jekyll-metadata
-*.patch
 _drafts
 *~
 _localconfig*
