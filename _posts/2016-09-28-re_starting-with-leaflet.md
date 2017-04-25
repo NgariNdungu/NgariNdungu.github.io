@@ -1,7 +1,7 @@
 ---
 layout: post
 title: (Re)Starting with Leaflet
-comments: true
+categories: Tech
 ---
 
 Getting a map onto a web page can be a daunting task. Demand that the map *does stuff* and hair-loss starts to be a concern. I know, this is about my fourth crack at it. This time though, I'm determined to come out *tops*.
@@ -10,14 +10,14 @@ Getting a map onto a web page can be a daunting task. Demand that the map *does 
 
 > Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 33 KB of JS, it has all the mapping features most developers ever need.
 
-As opposed to [Openlayers] which seems to have every feature out-of-the-box, leaflet ships with the most relevant features, relying on plugins to extend functionality. This to me seems the best approach as it allows me to slowly build on what my map does, pulling the bits and pieces as I need them. 
+As opposed to [Openlayers] which seems to have every feature out-of-the-box, leaflet ships with the most relevant features, relying on plugins to extend functionality. This to me seems the best approach as it allows me to slowly build on what my map does, pulling the bits and pieces as I need them.
 
 Needless to say, in this part of the world where internet access ain't exactly cheap, leaflet's ~100kB zip makes a lot more sense to download than the >10MB openlayers.
 
 ### Jekyll pages
-Jekyll is still a mystery am trying to unravel. Before adding my map, I had to figure out a little bit about how my site is built. The [documentation] states that: 
+Jekyll is still a mystery am trying to unravel. Before adding my map, I had to figure out a little bit about how my site is built. The [documentation] states that:
 
-> Every other directory and file ... —such as css and images folders, favicon.ico files, and so forth—will be copied verbatim to the generated site. 
+> Every other directory and file ... —such as css and images folders, favicon.ico files, and so forth—will be copied verbatim to the generated site.
 
 My first interpretation of this was that I just needed to add my `places.md` file to the root directory. This is technically not wrong, it just doesn't make for a clean design. The YAML front matter needed for this to work is:
 
@@ -56,7 +56,7 @@ The approach I chose is this:
 Jekyll doesn't use a database, and storing all this data as GeoJSON files isn't feasible. While the county points are stored as geojson and loaded with the [`leaflet-ajax`] plugin, all other data is retrieved via query from a site I have running on [pythonanywhere].
 
 #### The challenge
-The biggest challenge I see here is keeping the data updated. While I can mark a county or village as visited with a simple boolean field, how do I add extra info, how do I attach images? 
+The biggest challenge I see here is keeping the data updated. While I can mark a county or village as visited with a simple boolean field, how do I add extra info, how do I attach images?
 
 This is an interesting challenge and I will update as I go.
 
@@ -68,6 +68,5 @@ This is an interesting challenge and I will update as I go.
 [API docs]: http://leafletjs.com/reference-1.0.0.html
 [OpenStreetMap]: http://www.openstreetmap.org/
 [`leaflet-ajax`]: https://github.com/calvinmetcalf/leaflet-ajax
-[pythonanywhere]: http://ngarindungu.pythonanywhere.com/ 
+[pythonanywhere]: http://ngarindungu.pythonanywhere.com/
 [The map]: /places/
-

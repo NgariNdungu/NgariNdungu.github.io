@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Custom Domain Configuration
+categories: Tech
 ---
 
 It is no exageration to say that getting my custom domain to work with github pages was a pain. Admittedly the pain was mostly down to the fact that this was the *first* time I was dabbling in **DNS**. At least I hope so.
@@ -19,7 +20,7 @@ When you're learning how to do something by actually doing it, instant feedback 
 Not all registrars are created equal. Github's default [instructions] might work for some, or many but they didn't work for me. While these only talk about adding a CNAME record, for my setup to work, I needed to add A records pointing to github servers. These options are available [here][custom domain errors]. I saw enough **404** pages to last me a while. Enough to make me ask my registrar for help.
 
 The only thing I can fault my registrar for is that [instructions][domain manager] for managing your domain can be hard to find. Their customer service is responsive however, and after they created the A records for me, I added a CNAME record and voila! A github **404**. Turns out Firefox wanted to give me a bit more pain. Firefox kept sending me to a url that isn't available on my site. The DNS cache makes it so that even after your DNS changes have propagated, firefox will send you to the last(incorrect) url. Going into `preferences` and clearing my `web cache` fixed this for me.
- 
+
 > Lesson: Testing on different devices will save you tons of headache!
 
 > Silver lining: My site works! And I speak a little DNS!
@@ -29,4 +30,3 @@ The only thing I can fault my registrar for is that [instructions][domain manage
 [instructions]: https://help.github.com/articles/setting-up-a-www-subdomain/
 [custom domain errors]: https://help.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors
 [domain manager]: https://kenyawebexperts.com/knowledgebase/280/DNS-Managament-A-CNAME-and-MX-records.html
- 

@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Getting Started With Jekyll"
+categories: Tech
 ---
 
-I love the simplicity of text documents and every once in a while, I feel the need to put up a rant somewhere. Unfortunately, by the time I get online to get blogging, my rant is somewhat diluted. 
+I love the simplicity of text documents and every once in a while, I feel the need to put up a rant somewhere. Unfortunately, by the time I get online to get blogging, my rant is somewhat diluted.
 
-## Enter [Jekyll] 
+## Enter [Jekyll]
 
 Jekyll is a static site generator based on [Ruby]. And that was all I knew about Jekyll two days ago! So, what have I done these past two days:
 
@@ -51,6 +52,3 @@ Trying to run the jekyll server will fail if your local repository is not initia
 [install_rvm]: http://rvm.io/rvm/install
 [trouble]: https://jekyllrb.com/docs/troubleshooting/#problems-running-jekyll
 [localhost:4000]: http://localhost:4000
-
-
- 

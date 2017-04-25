@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Digressions into Design - Vector Graphics with Inkscape"
+categories: Tech
 ---
 
 Design isn't everybody's cup of tea. It certainly isn't mine. But if you never try...
@@ -37,9 +38,8 @@ It is in the pursuit of this beauty that I decided to try my hand at 'drawing'.
 
 If there's one thing I can say with a bit of confidence, it's that I don't suck at copying.
 
-The 'elegant' logo and the water-drop logo were done following [Nick Saporito's] excellent youtube tutorials. 
+The 'elegant' logo and the water-drop logo were done following [Nick Saporito's] excellent youtube tutorials.
 I found the videos a true eye opener to the power of [inkscape], and will be going back for more.
 
 [Nick Saporito's]: https://www.youtube.com/channel/UCEQXp_fcqwPcqrzNtWJ1w9w
 [inkscape]: https://inkscape.org/en/
-

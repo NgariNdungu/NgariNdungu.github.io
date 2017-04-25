@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Learning how to Code: My Story"
+categories: [Tech, Personal]
 ---
 
 I have had a running interest in learning how to program for about the last eight years.

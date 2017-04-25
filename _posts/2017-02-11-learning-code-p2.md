@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Learning how to Code: Part II"
+categories: [Tech, Personal]
 ---
 
 In the [first part] of this post, I wrote about what I consider as failures on my journey to learning how to code.
