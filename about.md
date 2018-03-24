@@ -16,4 +16,4 @@ There are things I am good at, and plenty more that am completely ignorant about
 If you have a problem needing an extra perspective, or an interesting project, drop me a line on [twitter], or via [email].
 
 [twitter]: https://twitter.com/pngarim
-[email]: {{ site.base_url }}{{ site.email }}
+[email]: mailto:{{ site.email }}
