@@ -25,6 +25,38 @@ I absolutely loath typing these multi-line statements in the shell. If I don't f
   # print(*i,sep='\n') to get the same output as above
 ~~~
 
+> Update#1
+
+#### Rails
+
+I am not quite sure where am at with rails. There are times when I feel pretty confident that I know my way around only to slam into a wall the next time I try something.
+I've been working on a project and got to try a few more of rails *magics*, including... SQL!
+
+~~~ rb
+execute <<-SQL.squish
+  UPDATE bikes
+  SET status = (
+    SELECT status_id
+    FROM old_bikes
+    WHERE old_bikes.id = bikes.id
+  )
+SQL
+~~~
+
+Whether manipulating data inside migrations is a good idea, I don't know. The camps for and against both seem to feel deeply about it.
+
+I didn't make much use of the rails command line first time round, but am definitely using it now.
+~~~ sh
+$ bin/rails c
+> show-models # show all models defined for the app
+> show-model Bike # show a single model columns and data types
+
+$ bin/rake notes # list all TODO, FIXME etc comments. Groups by file
+~~~
+
+Being able to leave comments in the code then come back and instantly see where to continue working, is a feature I didn't even know I was missing.
+Much of my time in the rails console however is spent exploring the methods that rails provides on model relations, and querying using the ORM.
+
 ---
 
 > I am lazy, so I'll keep updating this post when I learn something new. That is, until I get tired of scrolling down.
