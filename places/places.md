@@ -17,5 +17,5 @@ Map Goes Here
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
-<script src='leaflet.ajax.min.js' type='text/javascript'> </script>
-<script src='places.js' type='text/javascript'></script>
+<script src='{{ "/leaflet.ajax.min.js" | prepend: page.url }}' type='text/javascript'> </script>
+<script src='{{ "/places.js" | prepend: page.url }}' type='text/javascript'></script>

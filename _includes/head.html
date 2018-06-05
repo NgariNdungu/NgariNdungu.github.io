@@ -12,8 +12,8 @@
   {% else %}
   {% assign full_base_url = custom_url %}
   {% endif %}
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: full_base_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: full_base_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: full_base_url }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: custom_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: custom_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: custom_url }}">
 
 </head>
