@@ -57,6 +57,24 @@ $ bin/rake notes # list all TODO, FIXME etc comments. Groups by file
 Being able to leave comments in the code then come back and instantly see where to continue working, is a feature I didn't even know I was missing.
 Much of my time in the rails console however is spent exploring the methods that rails provides on model relations, and querying using the ORM.
 
+> Update#2
+
+#### Ruby
+I got the opportunity to go back and explore OOP concepts in ruby by modelling a blog *app*.
+It is a simple app but boy did it give me a think. What had me stumped for all of a day was implementing `blog.comments.new()`.
+An all familiar 'path' if you've used rails before.
+
+My initial design consisted of two classes, *Blog* and *Comment*. But when I got to implementing the *new()* method, I felt that a third class, corresponding to *comments* was needed.
+I created a *Collection* class at least four times, deleting it each time because I just couldn't figure out *new*.
+Took me a while to pick out that *new* could exist as both a class method and instance method.
+~~~ rb
+# calls class method initialize
+blog = Blog.new()
+# calls instance method new
+# blog.comments returns an instance of Blog::CommentsCollection
+comment = blog.comments.new()
+~~~
+
 ---
 
 > I am lazy, so I'll keep updating this post when I learn something new. That is, until I get tired of scrolling down.
