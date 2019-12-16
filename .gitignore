@@ -4,5 +4,6 @@ _site
 _drafts
 *~
 _localconfig*
+**/vendor/
 
 *.swp
