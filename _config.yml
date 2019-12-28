@@ -28,10 +28,8 @@ github_username:  ngarindungu
 markdown: kramdown
 theme: minima
 timezone: Africa/Nairobi
-
 jekyll_compose:
-  default_front_matter:
-    drafts:
-      category: Tech 
-      image:
-      author: "Ngari Ndung'u"
+  draft_default_front_matter:
+    category: "Tech"
+    author: "Ngari Ndung'u"
+    image:
