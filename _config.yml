@@ -13,23 +13,23 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ngari 'Ndinga'
+title: 'Ndinga'
 email: ngari@openmaps.co.ke
 description: > # this means to ignore newlines until "baseurl:"
-  This blog is a personal notebook. Things I want to remember go here.
-  Life is full of questions. Questions without answers or to which each
-  one of us has their own answer. I ask questions alot!
+  This is ngari's notebook. You're welcome to the knowledge but please leave the notebook as you found it.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ngarindungu.github.io" # the base hostname & protocol for your site
 repository: "ngarindungu/ngarindungu.github.io"
 twitter_username: pngarim
-github_username:  ngarindungu
+github_username:  NgariNdungu
+linkedin_profile: "https://www.linkedin.com/in/ngarindungu"
 # Build settings
 markdown: kramdown
 theme: minima
 timezone: Africa/Nairobi
 jekyll_compose:
-  draft_default_front_matter:
-    category: "Tech"
-    author: "Ngari Ndung'u"
-    image:
+  default_front_matter:
+    drafts:
+      category: "Tech"
+      author: "Ngari Ndung'u"
+      image:
