@@ -9,21 +9,22 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
 
-  {% if page.image %}
-  {% assign image_url = page.image | prepend: site.url %}
-  {% else %}
-  {% assign image_url = site.image | prepend: site.url %}
-  {% endif %}
-  <meta property="og:url" content="{{ page.url }}" />
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:image" content="{{ image_url }}" />
+  {%- if page.image -%}
+  {%- assign image_url = page.image | prepend: site.url -%}
+  {%- else -%}
+  {%- assign image_url = site.image | prepend: site.url -%}
+  {%- endif -%}
 
-  {% assign custom_url = site.url | append: site.baseurl %}
-  {% if jekyll.environment == 'production' %}
-  {% assign full_base_url = site.github.url | default: custom_url %}
-  {% else %}
-  {% assign full_base_url = custom_url %}
-  {% endif %}
+  {%- assign custom_url = site.url | append: site.baseurl -%}
+  {%- if jekyll.environment == 'production' -%}
+  {%- assign full_base_url = site.github.url | default: custom_url -%}
+  {%- else -%}
+  {%- assign full_base_url = custom_url -%}
+  {%- endif %}
+
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: custom_url }}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:image" content="{{ image_url }}" />
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: custom_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: custom_url }}">
