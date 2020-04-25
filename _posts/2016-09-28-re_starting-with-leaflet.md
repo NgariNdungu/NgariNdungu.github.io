@@ -1,6 +1,7 @@
 ---
 layout: post
 title: (Re)Starting with Leaflet
+author: "Ngari Ndung'u"
 categories: Tech
 ---
 

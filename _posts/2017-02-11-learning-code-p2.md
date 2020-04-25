@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Learning how to Code: Part II"
+author: "Ngari Ndung'u"
 categories: [Tech, Personal]
 ---
 

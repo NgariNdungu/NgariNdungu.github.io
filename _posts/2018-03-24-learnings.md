@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Learnings I
+author: "Ngari Ndung'u"
 category: Tech
 ---
 

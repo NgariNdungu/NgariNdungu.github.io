@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Getting Started With Jekyll"
+author: "Ngari Ndung'u"
 categories: Tech
 ---
 

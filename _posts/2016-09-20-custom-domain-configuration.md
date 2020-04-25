@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Custom Domain Configuration
+author: "Ngari Ndung'u"
 categories: Tech
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Developing Rails Applications on Docker - A Beginner's Journey
+author: "Ngari Ndung'u"
 categories: Tech
 ---
 

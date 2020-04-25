@@ -14,7 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 'Ndinga'
-email: ngari@openmaps.co.ke
+email: ngari@ngarindungu.me.ke
+author: "Ngari Ndung'u"
 description: > # this means to ignore newlines until "baseurl:"
   This is ngari's notebook. You're welcome to the knowledge but please leave the notebook as you found it.
 image: "/images/journey_edge_600.jpg"
@@ -23,7 +24,7 @@ url: "https://ngarindungu.github.io" # the base hostname & protocol for your sit
 repository: "ngarindungu/ngarindungu.github.io"
 twitter_username: pngarim
 github_username:  NgariNdungu
-linkedin_profile: "https://www.linkedin.com/in/ngarindungu"
+linkedin_username: ngarindungu
 # Build settings
 markdown: kramdown
 theme: minima

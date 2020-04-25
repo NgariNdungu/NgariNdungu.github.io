@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Learning how to Code: My Story"
+author: "Ngari Ndung'u"
 categories: [Tech, Personal]
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A Ruby Vacation"
+author: "Ngari Ndung'u"
 categories: Tech
 ---
 

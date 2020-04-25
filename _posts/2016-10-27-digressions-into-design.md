@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Digressions into Design - Vector Graphics with Inkscape"
+author: "Ngari Ndung'u"
 categories: Tech
 ---
 

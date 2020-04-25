@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The teacher
+author: "Ngari Ndung'u"
 categories: Personal
 ---
 

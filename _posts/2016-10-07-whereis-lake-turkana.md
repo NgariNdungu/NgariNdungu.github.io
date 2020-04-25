@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Where is L.Turkana?"
+author: "Ngari Ndung'u"
 categories: [Tech, GIS]
 ---
 
