@@ -6,6 +6,9 @@ services:
     volumes:
       - ./:/srv/jekyll
       - ./vendor/bundle:/usr/local/bundle
+    environment:
+      GEM_HOME: /usr/local/bundle
+      GEM_BIN: /usr/local/bundle/bin
     ports:
       - 4000:4000
       - 35729:35729
