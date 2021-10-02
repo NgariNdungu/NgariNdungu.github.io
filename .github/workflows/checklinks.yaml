@@ -37,12 +37,6 @@ jobs:
           name: links-check.log
           path: links.log
 
-- name: Archive log links
-  uses: actions/upload-artifact@v1
-  with:
-    name: links-check.log
-    path: links.log
-
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
