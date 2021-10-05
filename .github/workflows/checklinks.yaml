@@ -1,0 +1,38 @@
+name: CheckLinks
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  schedule:
+      - cron:  '17 6 3 * *'
+
+jobs:
+  checklinks:
+    name: Linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+      - name: Build jekyll website
+        run: bundle exec jekyll build
+      - name: Check for broken links
+        id: "broken-link-check"
+        run: |
+          bundle exec htmlproofer ./_site --only-4xx &> links.log
+        continue-on-error: true
+      - name: Print
+        shell: bash
+        run: |
+          cat links.log
+      - name: Archive log links
+        uses: actions/upload-artifact@v1
+        with:
+          name: link-check
+          path: links.log

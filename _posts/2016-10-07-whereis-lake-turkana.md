@@ -5,7 +5,7 @@ author: "Ngari Ndung'u"
 categories: [Tech, GIS]
 ---
 
-I literally can't see an online map and not get interested. Que the [Nation's Deadly Force Database]. I fired up Firefox's browser console and the rest as they say is, well... what follows.
+I literally can't see an online map and not get interested. Queue the [Nation's Deadly Force Database(paywalled)]. I fired up Firefox's browser console and the rest as they say is, well... what follows.
 
 ### Of File Sizes
 The counties json file loaded on Nation's page is a *whooping* 1.2**MB**. Not too big by today's standards, and considering it contains all 47 county (not exactly straight) boundaries. I happen to have the *same* data in a spatialite database and got curious on how the file sizes would compare. So, first thing, I needed to download the data.
@@ -31,6 +31,6 @@ The problem of combining spatial data from disparate sources is always interesti
 
 None of these maps, as surveyor's like to say *are an authority to boundaries*. That happens to be the domain of the IEBC... I think. But the question remains... Where is L.Turkana?
 
-[Nation's Deadly Force Database]: http://www.nation.co.ke/newsplex/deadly-force-database/2718262-3402136-ms1o0nz/index.html
+[Nation's Deadly Force Database(paywalled)]: https://www.nation.co.ke/newsplex/deadly-force-database/2718262-3402136-ms1o0nz/index.html
 [Browser console]: {{site.url}}/images/web_console.png
 [L.Turkana]: {{site.url}}/images/lturkana.png
