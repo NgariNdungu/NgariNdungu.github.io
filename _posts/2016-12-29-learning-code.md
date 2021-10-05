@@ -65,4 +65,4 @@ Seemed like a good decision at the time, but, catastrophe! After that, I just di
 ### Learning to Learn
 I make too much noise when I write. I'll follow this up with a [part II].
 
-[part II]: {{site.url}}/2017/02/11/learning-code-p2.html
+[part II]: {{ site.baseurl }}{% link _posts/2017-02-11-learning-code-p2.md %}

@@ -66,8 +66,12 @@ It was months of hard toil to complete my project, but when I did, it left me wi
 It gave me the realization that I had been going about my education all wrong.
 Jumping all-in is how I learn, and it's how I [learnt Ruby].
 
-[first part]: {{site.url}}/2016/12/29/learning-code.html
+[first part]: {{site.baseurl}}{% link _posts/2016-12-29-learning-code.md %}
+
 [django]: https://www.djangoproject.com/
+
 [Codecademy's python course]: https://www.codecademy.com/learn/python
+
 [Django Girls tutorial]: https://tutorial.djangogirls.org/en/
-[learnt Ruby]: {{site.url}}/2016/11/26/a-ruby-vacation.html
+
+[learnt Ruby]: {{site.baseurl}}{% link _posts/2016-11-26-a-ruby-vacation.md %}
