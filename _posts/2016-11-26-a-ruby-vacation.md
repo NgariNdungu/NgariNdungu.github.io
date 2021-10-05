@@ -44,7 +44,7 @@ I have an app waiting for me, that I need to read and disect. I will need to
 deploy this app and add functionality to it. I guess this is what excites me.
 Will it sink or swim? Swim, obviously!
 
-[building]:{{site.url}}/2016/09/14/getting-started-with-jekyll.html
+[building]:{% post_url 2016-09-14-getting-started-with-jekyll %}
 [ruby koans]:http://rubykoans.com/
 [rails]:http://rubyonrails.org/
 [introduction]:https://youtu.be/OaDhY_y8WTo

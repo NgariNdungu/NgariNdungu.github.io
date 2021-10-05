@@ -43,7 +43,7 @@ Trying to run the jekyll server will fail if your local repository is not initia
 
 [Jekyll]: https://jekyllrb.com/
 [Ruby]: https://www.ruby-lang.org/en/about/
-[domain]: https://www.ngarindungu.me.ke
+[domain]: https://ngarindungu.me.ke
 [Github pages]: https://pages.github.com/
 [markdown]: http://kramdown.gettalong.org/
 [Jekyll documentation]: https://jekyllrb.com/docs/home/
