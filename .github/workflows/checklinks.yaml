@@ -7,7 +7,7 @@ on:
     branches:
       - master
   schedule:
-      - cron:  '30 5,17 * * *'
+      - cron:  '17 6 3 * *'
 
 jobs:
   checklinks:
@@ -16,20 +16,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6.x
-      - name: Setup Rubygems, install dependencies
-        run: | 
-          gem update --system --no-document
-          gem update bundler --no-document
-          bundle install
-      - name: Build jekyll website with drafts
-        run: bundle exec jekyll build --drafts
+          ruby-version: 2.7
+          bundler-cache: true
+      - name: Build jekyll website
+        run: bundle exec jekyll build
       - name: Check for broken links
         id: "broken-link-check"
         run: |
-          bundle exec htmlproofer --log-level :debug ./_site &> links.log
+          bundle exec htmlproofer ./_site --only-4xx &> links.log
         continue-on-error: true
       - name: Print
         shell: bash
