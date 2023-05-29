@@ -35,3 +35,11 @@ jekyll_compose:
       category: "Tech"
       author: "Ngari Ndung'u"
       image:
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Ngari Ndung'u"
+      layout: "post"
